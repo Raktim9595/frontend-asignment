@@ -48,7 +48,7 @@ const ProductDetailsPage = ({ product }: { product: Product }) => {
   };
 
   return (
-    <div className="flex px-8 sm:px-0 flex-col space-y-5 sm:space-y-0 sm:flex-row h-[65vh] md:h-[65vh] lg:h-[75vh] sm:justify-between sm:space-x-4 md:space-x-0">
+    <div className="flex px-8 sm:px-0 flex-col space-y-5 sm:space-y-0 sm:flex-row min-h-[65vh] md:h-[65vh] lg:h-[75vh] sm:justify-between sm:space-x-4 md:space-x-0">
       {/* image container  */}
       <div className="w-44 self-center sm:self-auto sm:w-20 basis-[48%] xl:basis-2/5 bg-white rounded shadow flex items-center justify-center">
         <img

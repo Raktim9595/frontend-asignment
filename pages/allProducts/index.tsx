@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { Product } from "@/utils/types";
 import newRequest from "@/utils/newRequest";
 import Spinner from "@/components/Spinner";
@@ -23,9 +23,6 @@ const AllProducts = () => {
     queryKey: ["allProducts"],
     queryFn: () => newRequest.get(querystring).then((res) => res.data),
   });
-  useEffect(() => {
-    refetch();
-  }, [searchName]);
 
   if (isLoading) {
     return (

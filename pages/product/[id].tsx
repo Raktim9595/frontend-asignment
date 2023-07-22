@@ -18,7 +18,7 @@ const ProductDetails = (props: ProductProps) => {
           </Link>
           <span>{">"}</span>
           <Link
-            href="/allProducts"
+            href="/allProducts?searchName=''"
             className="text-sm text-orange-500 underline"
           >
             products
